@@ -58,9 +58,9 @@ def main():
                     send_message(text=message, parse_mode="MarkdownV2")
                     send_message(chat_id=ACHMAD, text=message, parse_mode="MarkdownV2")
 
-                    sender = "644spv@posindonesia.co.id"
-                    # receiver = 'hori.juventini@gmail.com'
-                    receiver = "bapenda@nganjukkab.go.id"
+                    sender = ""
+                    # receiver = ''
+                    receiver = ""
                     subject = f"Trx PBB Kantor Pos Nganjuk {date}"
                     body = """
                     Dengan hormat,
@@ -69,10 +69,10 @@ def main():
                     Tks
 
                     ===============================================
-                    # Yogi Trismayana 991483728
-                    # HP. 082140513878
-                    # Kantor Pos Nganjuk 64400
-                    # Jl. Supriyadi No. 19 Kauman - Nganjuk 64411
+                    #
+                    #
+                    #
+                    #
                     ===============================================
                     """
                     send_email(sender, receiver, subject, body, filepath2)
