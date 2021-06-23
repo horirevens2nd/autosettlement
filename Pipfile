@@ -9,8 +9,9 @@ pyyaml = "*"
 python-telegram-bot = "*"
 
 [dev-packages]
-autopep8 = "*"
 pretty-errors = "*"
+black = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.8"
