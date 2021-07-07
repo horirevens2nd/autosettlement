@@ -66,8 +66,8 @@ def get_attachment(sender="mohamad.arif.supriyanto", subject=""):
 
                 # create a new file if not exist or overwrite it if exist
                 if bool(filename):
-                    assets_dirpath = create_dirs(["assets"])
-                    base_dirpath = create_subdirs(assets_dirpath[0], ["txt"])
+                    dist_dirpath = create_dirs(["dist"])
+                    base_dirpath = create_subdirs(dist_dirpath[0], ["txt"])
                     sub_dirpath = create_subdirs(base_dirpath[0], ["pbb", "pdam"])
 
                     product_id = filename[9:14]

@@ -4,6 +4,7 @@ import logging
 import imaplib
 import datetime
 from time import sleep
+import yaml
 
 import pretty_errors
 
@@ -16,6 +17,12 @@ from telegrambot import send_message, ACHMAD
 
 def main():
     logger = logging.getLogger("main")
+
+    # read secret.yaml
+    with open("secret.yaml", "r") as file:
+        secret = yaml.load(file, Loader=yaml.FullLoader)
+        SENDER = secret["email"]["sender"]
+        RECEIVER = secret["email"]["receiver"]
 
     try:
         today = datetime.date.today()
@@ -58,9 +65,8 @@ def main():
                     send_message(text=message, parse_mode="MarkdownV2")
                     send_message(chat_id=ACHMAD, text=message, parse_mode="MarkdownV2")
 
-                    sender = ""
-                    # receiver = ''
-                    receiver = ""
+                    sender = SENDER
+                    receiver = RECEIVER
                     subject = f"Trx PBB Kantor Pos Nganjuk {date}"
                     body = """
                     Dengan hormat,
