@@ -75,10 +75,10 @@ def main():
                     Tks
 
                     ===============================================
-                    #
-                    #
-                    #
-                    #
+                    # Yogi Trismayana
+                    # IT Support - Kantor Pos Nganjuk 64400
+                    # Jl. Supriyadi No. 19 Kauman - Nganjuk 64411
+                    # 0821-4051-3878 | 644spv@posindonesia.co.id
                     ===============================================
                     """
                     send_email(sender, receiver, subject, body, filepath2)
